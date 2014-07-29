@@ -1,11 +1,10 @@
-require 'octokit'
 require 'yaml'
 require 'json'
 require 'sinatra/base'
 require 'faraday-http-cache'
 require './software_metadata.rb'
 require 'puma'
-require 'pry'
+
 @@software_metadata = SoftwareMetadata.new
 
 class Server < Sinatra::Application
